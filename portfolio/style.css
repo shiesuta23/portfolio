@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: rgb(232, 51, 138);
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #fff8fb, #fff2f7);
+}
+
+/* header*/
+header {
+    background: #fbfafa;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 90px;
+}
+
+header h1 {
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;
+}
+
+nav {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: grey;
+}
+
+.main-visual {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;      /*　ボタン同士の間隔　*/
+    justify-content: space-evenly;      /*　均等に配置　*/
+    align-items: center;
+}
+
+.item {
+    text-align: center;
+}
+
+.button-container img {
+    width: 600px;
+    cursor: pointer;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.item img:hover {
+    transform: translateY(-8px);
+}
+
+.item p {
+    margin-top: 0px;
+    position: relative;
+    top: -180px;
+}
+
+.contact {
+    width: 90%;
+    margin: 80px auto;
+    max-width: 900px;
+    padding: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    background: #fffafc;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.25);
+    border: 2px solid #ffe3ec;
+
+    transition: 0.3s ease;
+}
+
+.contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(255, 182, 193, 0.35);
+}
+.contact img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffd6e7;
+}
+
+.contact h2 {
+    color: #d86a9f;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.insta-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+
+    background: linear-gradient(45deg,#ffb6d5,#ff8ab5);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+
+    transition: all .3s ease;
+}
+
+.insta-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 20px rgba(255, 138, 181, .4);
+}
