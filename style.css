@@ -87,10 +87,9 @@ nav ul li a {
 }
 
 .button-container img {
-    width: 600px;
-    cursor: pointer;
-    display: block;
-    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 .item img:hover {
@@ -109,6 +108,7 @@ nav ul li a {
 
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 40px;
 
     background: #fffafc;
@@ -272,4 +272,40 @@ button:hover {
     aspect-ratio: 16/9;
     border: none;
     border-radius: 20px;
+}
+
+@media screen and (max-width:768px) {
+    header {
+        height: auto;
+        padding: 15px 0;
+    }
+
+    header h1 {
+        position: static;
+        text-align: center;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        position: static;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .contact {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact img {
+        width: 160px;
+        height: 160px;
+    }
 }
